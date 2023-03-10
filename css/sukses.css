@@ -1,0 +1,160 @@
+body{
+	background:  rgb(235, 235, 235) ;
+}
+form {
+  width: 40vw;
+  height: auto;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: width 200ms ease-in-out;
+}
+table {
+	border: 10px solid  rgb(235, 235, 235);
+	border-collapse: collapse;
+	margin: 0;
+	padding: 100px;
+	width: 100%;
+	table-layout: fixed;
+}
+
+table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+table tr {
+	background-color: #009961;
+	border: 0px;
+	padding: 10px;
+	border-radius: 3px;
+}
+table thead tr:first-child {
+	height: 5px;
+    border: 1px solid#009961;
+}
+table th,
+table td {
+	padding: 8px ;
+	text-align: center;
+	color: #9da9b9;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+table td:nth-child(4) {
+	font-size: 18px;
+}
+
+table th {
+	font-size: .85em;
+	letter-spacing: .1em;
+	text-transform: Times New Roman;
+	background: #009961;
+	color: #FFF;
+}
+
+
+
+tbody tr:nth-child(even) {
+	background-color: #F8F8FF;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #E6E6FA;
+}
+
+table tbody tr td .button1 {
+	background: #009961;
+	color: #FFF;
+	font-size: 13px;
+	transition: all .5s;
+	padding: 15px 20px;
+	margin-top:5px;
+  margin-right:10px;
+  margin-bottom:10px;
+  margin-left:10px;
+	border: 0;
+	font-family: Arial;
+}
+  table tbody tr td .button1:hover {
+	color: #FAEBD7;
+	letter-spacing: 1.0px;
+	box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all .3s;
+	padding: 10px 20px;
+  }
+@media screen and (max-width: 600px) {
+	table {
+		border: 0;
+	}
+	table caption {
+		font-size: 1.3em;
+	}
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		position: absolute;
+		width: 1px;
+		padding: 0;
+	}
+	table tr {
+		border-bottom: 3px solid #e1e5e9;
+		display: block;
+		margin-bottom: .625em;
+	}
+	table th,
+	table td {
+		padding: 0.625em;
+	}
+	table td {
+		border-bottom: 1px solid #e1e5e9;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+		color: #9da9b9;
+	}
+	table td::before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #656971;
+	}
+	table td:last-child {
+		border-bottom: 0;
+	}
+	table td:nth-child(4) {
+		font-size: 0.8em;
+	}
+	button {
+	  background-color: purple;
+	}
+
+}
+
+.btn {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background: #009961;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: background 300ms ease-in-out;
+}

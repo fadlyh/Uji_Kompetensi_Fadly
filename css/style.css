@@ -1,0 +1,120 @@
+:root {
+	--main-bg-color: #ececec;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	background-color: var(--main-bg-color);
+}
+
+.container {
+	margin: auto;
+	padding: 2rem;
+	border-radius: 2.5rem;
+	background-color: var(--main-bg-color);
+	box-shadow: 13px 13px 20px #cbced1,
+							-13px -13px 20px #ffffff;
+/* Pusatkan secara vertikal dan horizontal */
+position: absolute;
+top: 40%;
+left: 40%;
+margin: -25px 0 0 -25px;
+}
+
+.logo {
+	display: flex;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.logo__svg {
+	margin: auto;
+	width: calc(6.25rem / 3);
+	height: calc(6.25rem / 3);
+	opacity: 0.4;
+}
+
+.form__group {
+	width: 18rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.form__icon {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	display: flex;
+	width: 3rem;
+}
+
+.form__icon svg {
+	margin: auto;
+	weight: 0.75rem;
+	height: 0.75rem;
+	opacity: 0.35;
+}
+
+.form__control {
+	appearance: none;
+	border: none;
+	background-color: transparent;
+	font-size: 0.875rem;
+	padding: 1rem;
+	padding-left: 2.5rem;
+	width: 100%;
+	border-radius: 1.5rem;
+	box-shadow: 
+		inset 8px 8px 8px  #5ffff2,
+		inset -8px -8px 8px #74fff8;
+}
+
+.form__control:focus {
+	outline: none;
+	box-shadow: 
+		inset 8px 8px 8px #c5c5c5,
+		inset -8px -8px 8px #FFFFFF;
+}
+
+.form__control:focus::placeholder {
+	color: #d3d3d3;
+	letter-spacing: 0.15em;
+}
+
+.form__control::placeholder {
+	color: #CCCCCC;
+}
+
+.form__button {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	border: none;
+	font-size: 0.875rem;
+	color: #FFFFFF;
+	background-color: #76c1f3;
+	width: 100%;
+	display: block;
+	padding: 0.875rem 1rem;
+	border-radius: 1.5rem;
+	box-shadow: 
+		3px 3px 8px #6ed9fa,
+		-3px -3px 8px #ffffff;
+}
+
+.form__button:focus {
+	outline: none;
+	box-shadow: 
+		3px 3px 20px #B1B1B1,
+		-3px -3px 20px #FFFFFF;
+}
+
+.form__button:hover {
+	opacity: 0.85;
+}
